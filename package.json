@@ -1,0 +1,48 @@
+{
+  "name": "elemental-api",
+  "version": "0.0.1",
+  "description": "Node client library and CLI to access REST APIs on Elemental services",
+  "main": "./lib/index.js",
+  "bin": {
+    "ele": "./cli/index.js"
+  },
+  "scripts": {
+    "ele": "node ./cli/index.js",
+    "lint": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuu/elemental-api.git"
+  },
+  "keywords": [],
+  "author": "Kuu Miyazaki <miyazaqui@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuu/elemental-api/issues"
+  },
+  "homepage": "https://github.com/kuu/elemental-api#readme",
+  "dependencies": {
+    "config": "^3.0.1",
+    "debug": "^4.1.1",
+    "minimist": "^1.2.0",
+    "node-fetch": "^2.3.0",
+    "through2-parallel": "^0.1.3"
+  },
+  "devDependencies": {
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "camelcase": 0,
+      "capitalized-comments": 0,
+      "new-cap": 0,
+      "no-await-in-loop": 0,
+      "no-multi-assign": 0,
+      "no-return-assign": 0,
+      "import/no-dynamic-require": 0,
+      "unicorn/catch-error-name": 0
+    }
+  }
+}
