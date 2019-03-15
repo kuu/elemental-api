@@ -56,9 +56,9 @@ Commands:
 Syntax:
   oo raw method path body
 Example:
-  oo -h
-  oo -v
-  oo raw PUT https://xxx/api/jobs
+  ele -h
+  ele -v
+  ele raw get /nodes
 Parameters:
   method        HTTP method (GET/POST/PUT/DELETE)
   path          Path starts with '/'
