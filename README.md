@@ -131,7 +131,7 @@ Options:
 Commands:
   raw             Directly calls REST API
 Syntax:
-  oo raw method path body
+  ele raw method path body
 Example:
   ele -h
   ele -v

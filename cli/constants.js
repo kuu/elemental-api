@@ -4,14 +4,16 @@ const VERSION = `v${pkg.version}`;
 
 const CONFIG = `
 Please put config file(s) in your work directory.
- $ mkdir config
- $ vi config/default.json
- {
-   "auth": {
-     "user":        "Your Elemental User Name,
-     "api_key":     "Your Elemental API Key"
-   }
- }
+$ mkdir config
+$ vi config/default.json
+{
+  "host":          "xxxx.cloud.elementaltechnologies.com",
+  "secure":        true,
+  "auth": {
+    "user":        "Your login user name",
+    "api_key":     "Your secret API key"
+  }
+}
 `;
 
 const HELP = `
@@ -23,11 +25,11 @@ Options:
 Commands:
   raw             Directly calls REST API
 Syntax:
-  oo raw method path body
+  ele raw method path body
 Example:
-  oo -h
-  oo -v
-  oo raw PUT https://xxx/api/jobs
+  ele -h
+  ele -v
+  ele raw get /nodes
 Parameters:
   method        HTTP method (GET/POST/PUT/DELETE)
   path          Path starts with '/'
