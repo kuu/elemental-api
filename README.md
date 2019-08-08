@@ -9,13 +9,7 @@
 Node client library and CLI to access REST APIs on Elemental services
 
 ## Install
-You need `git` and `Node.js` installed
-
-```
-$ git clone https://github.com/kuu/elemental-api.git
-$ cd elemental-api
-$ npm install
-```
+[![NPM](https://nodei.co/npm/elemental-api.png?mini=true)](https://nodei.co/npm/elemental-api/)
 
 ## API
 
