@@ -1,6 +1,6 @@
 {
   "name": "elemental-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node client library and CLI to access REST APIs on AWS Elemental appliances & software",
   "main": "./lib/index.js",
   "bin": {
