@@ -7,7 +7,6 @@ test('delete', async t => {
   const user = 'John';
   const pass = 'Password';
   const path = '/path/to/endpoint';
-  const params = {abc: 'def', ghi: 123};
   const options = {secure: true};
   const mockFetch = {
     fetch() {
@@ -49,9 +48,9 @@ test('delete', async t => {
   const {ParallelStream} = mockRequest;
   ElementalApi.__set__({ParallelStream});
   const api = new ElementalApi(host, user, pass, options);
-  const result = await api.delete(path, params);
+  const result = await api.delete(path);
   t.is(result, 'abc');
   t.is(spyFetch.callCount, 1);
-  t.is(spyFetch.getCall(0).args[0], `https://${host}${path}?abc=def&ghi=123`);
+  t.is(spyFetch.getCall(0).args[0], `https://${host}${path}`);
   t.is(spyFetch.getCall(0).args[1].method, 'DELETE');
 });
