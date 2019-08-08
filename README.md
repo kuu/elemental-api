@@ -6,7 +6,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 # elemental-api
-Node client library and CLI to access REST APIs on Elemental services
+Node client library and CLI to access REST APIs on AWS Elemental appliances & software
 
 ## Install
 [![NPM](https://nodei.co/npm/elemental-api.png?mini=true)](https://nodei.co/npm/elemental-api/)

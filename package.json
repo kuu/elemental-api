@@ -1,7 +1,7 @@
 {
   "name": "elemental-api",
   "version": "0.0.1",
-  "description": "Node client library and CLI to access REST APIs on Elemental services",
+  "description": "Node client library and CLI to access REST APIs on AWS Elemental appliances & software",
   "main": "./lib/index.js",
   "bin": {
     "ele": "./cli/index.js"
@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/kuu/elemental-api#readme",
   "dependencies": {
-    "config": "^3.0.1",
+    "config": "^3.2.2",
     "debug": "^4.1.1",
     "minimist": "^1.2.0",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.0",
     "through2-parallel": "^0.1.3"
   },
   "devDependencies": {
