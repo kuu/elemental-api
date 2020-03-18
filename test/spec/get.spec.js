@@ -1,6 +1,7 @@
 const test = require('ava');
 const sinon = require('sinon');
 const rewire = require('rewire');
+const HttpsProxyAgent = require('https-proxy-agent');
 
 test('get', async t => {
   const host = 'example.com';
@@ -54,4 +55,6 @@ test('get', async t => {
   t.is(spyFetch.callCount, 1);
   t.is(spyFetch.getCall(0).args[0], `https://${host}${path}?abc=def&ghi=123`);
   t.is(spyFetch.getCall(0).args[1].method, 'GET');
+  t.truthy(spyFetch.getCall(0).args[1].agent);
+  t.is(spyFetch.getCall(0).args[1].agent instanceof HttpsProxyAgent, true);
 });
