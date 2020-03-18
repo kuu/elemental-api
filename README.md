@@ -104,6 +104,10 @@ Send a [DELETE] request
 #### return value
 A `Promise` object that resolves with return value
 
+## Environment variables
+| Name           | Description                       |
+| -------------- | --------------------------------- |
+| HTTP_PROXY     | Proxy server's IP address / FQDN + port number. ex. localhost:8080 Referenced by `get`, `post`, `put`, and `delete`|
 
 ## Configure (for CLI)
 Put a config file in your work directory
